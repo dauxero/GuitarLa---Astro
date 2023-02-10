@@ -1,7 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Guitarra from "@components/Guitarra.astro";
-const url = `${import.meta.env.PUBLIC_API_URL}/guitarras?populate=imagen`;
+const url =
+  "https://guitarla-strapi-5ux1.onrender.com/api/guitarras?populate=imagen";
 const respuesta = await fetch(url);
 const { data } = await respuesta.json();
 ---

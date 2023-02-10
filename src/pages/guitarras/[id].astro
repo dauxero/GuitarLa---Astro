@@ -3,7 +3,8 @@ import Layout from "@layouts/Layout.astro";
 
 //importar tenemos que utiizar la funcion getstaticpatch de astro
 export async function getStaticPaths() {
-  const url = `${import.meta.env.PUBLIC_API_URL}/guitarras?populate=imagen`;
+  const url =
+    "https://guitarla-strapi-5ux1.onrender.com/api/guitarras?populate=imagen";
   const respuesta = await fetch(url);
   const { data } = await respuesta.json();
 

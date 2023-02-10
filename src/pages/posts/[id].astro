@@ -3,7 +3,8 @@ import Layout from "@layouts/Layout.astro";
 import { formatearFecha } from "src/helpers/formatearFecha";
 //importar tenemos utilizar a funcion getStaticPaths
 export async function getStaticPaths() {
-  const url = `${import.meta.env.PUBLIC_API_URL}/posts?populate=imagen`;
+  const url =
+    "https://guitarla-strapi-5ux1.onrender.com/api/posts?populate=imagen";
   const respuesta = await fetch(url);
   const { data } = await respuesta.json();
 
