@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import nosotros from "../../public/images/nosotros.jpg";
+---
+
+<Layout title="Nosotros" description="Quienes somos en GuitarLa">
+  <main>
+    <h1 class="heading">Nosotros</h1>
+    <div class="contenido">
+      <img src={nosotros} alt="Imagen de nosotros" />
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nobis
+          consequuntur earum aliquid, dicta quo iure quisquam dolor modi
+          nesciunt dolore excepturi dolores molestiae unde alias sapiente porro!
+          Recusandae, quas? Lorem ipsum dolor sit amet consectetur adipisicing
+        </p>
+        <p>
+          elit. Odio explicabo exercitationem aliquam autem voluptates excepturi
+          perspiciatis fugiat et at deserunt. Architecto quod quo illo inventore
+          temporibus quas suscipit ducimus aliquam!
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .contenido {
+    display: grid;
+    gap: 4rem;
+  }
+  @media (min-width: 768px) {
+    .contenido {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+</style>
